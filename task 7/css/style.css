@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 60px 20px;
+}
+
+.section-divider {
+  margin: 80px auto;
+  border: 0;
+  border-top: 2px dashed gainsboro;
+  width: 80%;
+}
+
+.options-section {
+  display: flex;
+  justify-content: center;
+}
+
+.options-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-option-one {
+  position: relative;
+  width: 320px;
+  padding: 30px 24px;
+  background-color: gainsboro;
+  color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease, color 0.4s ease;
+}
+
+.card-one-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: teal;
+  color: gainsboro;
+  border-bottom-left-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  transition: 0.5s;
+}
+
+.card-one-badge i {
+  transform: rotate(-90deg);
+}
+
+.card-one-title {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.card-one-desc {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+  transition: 0.4s;
+}
+
+.card-option-one:hover {
+  background-color: teal;
+  color: gainsboro;
+}
+
+.card-option-one:hover .card-one-desc {
+  color: gainsboro;
+}
+
+.card-option-two {
+  position: relative;
+  width: 320px;
+  padding: 25px;
+  background-color: gainsboro;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-two-accent {
+  position: absolute;
+    top: 0;
+    right: -68px;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(69, 13, 13);
+    transform: skewX(22deg);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15px;
+    transition: right 0.5s ease;
+    transform: skewX(7deg);
+}
+
+.card-two-arrow {
+  color: gainsboro;
+  font-size: 11px;
+}
+
+.card-two-arrow i {
+  transform: rotate(-90deg);
+}
+
+.card-two-icon {
+  color: black;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.card-two-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: gray;
+}
+
+.card-two-desc {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.card-option-two:hover .card-two-accent {
+  right: 0;
+  margin: 0 -10px 0 0;
+}
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 80px 0;
+}
+
+.team-container {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-card {
+  position: relative;
+  width: 240px;
+  height: 260px;
+}
+
+.team-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.team-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(1, 1, 1, 0.08);
+  z-index: 1;
+  transition: 0.35s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.team-info {
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.team-name {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.team-role {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
+
+.team-card:hover .team-card-bg {
+  transform: translate(30px, 20px); 
+  height: 125%;                    
+}
+
+.team-card:hover .team-info {
+  opacity: 1;
+}
