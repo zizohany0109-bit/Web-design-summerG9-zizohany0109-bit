@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off">
+     <fieldset>
+       <legend><h2>search</h2></legend>
+
+
+       
+         <div>
+            <label> First Name : </label>
+            <input type="text" autocomplete="off"  name="firstName" required placeholder="Enter your first name" pattern="[A-Za-z]+" title="please enter letters only">
+        </div>
+        
+          
+        <div>
+            <label> Last Name : </label>
+            <input type="text" autocomplete="off"  name="lastName" placeholder="Enter your last name" minlength="5">
+        </div>
+
+
+        <div>
+            <label> mobile : </label>
+            <input type="tel" name="mobile" placeholder="Enter your mobile" maxlength="11" pattern="01[0125][0-9]{8}">
+        </div>
+
+
+        <div>
+            <label> courses : </label>
+            <input type="text" name="courses" list="courses" placeholder="select">
+
+            <datalist id="courses">
+                <option value="css"></option>
+                <option value="html"></option>
+                <option value="javaScript"></option>
+                <option value="bootstrap"></option>
+                <option value="ziad"></option>
+                <option value="web"></option>
+                <option value="design"></option>
+            </datalist>
+        </div>
+           
+
+        <div>
+            <label> upload photo : </label>
+            <input type="file" name="photo" placeholder="upload your photo" accept=".png">
+        </div>
+
+
+        <div>
+            <label> comment : </label>
+            <textarea name="comment" placeholder="your comment" required></textarea>
+        </div>
+
+
+        <div>
+            <label> date of birth : </label>
+            <input type="date" placeholder="date of your birth" required name="dateofbirth">
+        </div>
+
+
+         <div>
+            <label>Gender : </label>
+            <input type="radio" name="gender" value="male"><label>Male</label>
+            <input type="radio" name="gender" value="female"><label>Female</label>
+        </div>
+
+
+        <div>
+            <label> tracks : </label>
+               <input type="checkbox" name="track" value="Front-End"><label>Front-End</label>
+               <input type="checkbox" name="track" value="Back-End"><label>Back-End</label>
+               <input type="checkbox" name="track" value="UI/UX"><label>UI/UX</label>
+               <input type="checkbox" name="track" value="web designer" checked><label>web designer</label>
+        </div>
+        
+        
+        <div>
+            <label> Range : </label>
+            <input type="range" name="range" min="10" max="100">
+        </div>
+
+     
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear Data">
+        </div>
+
+        
+
+     </fieldset>
+    </form>
+</body>
+</html>

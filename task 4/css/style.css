@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+nav{
+    background:black;
+    height:70px;
+}
+
+nav .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:70px;
+}
+
+.logo h1{
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:orange;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:orange;
+}
+
+.hero{
+
+    background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20230525/pngtree-city-high-rise-buildings-background-shiny-wallpaper-image_2807833.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:90vh;
+}
+
+.overlay{
+    background:black (0,0,0,.65);
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+}
+
+.left{
+    width:50%;
+    color:white;
+}
+
+.big-logo{
+    font-size:90px;
+    font-weight:bold;
+}
+
+.big-logo span{
+    color:orange;
+    font-weight:300;
+}
+
+.left h2{
+    margin-top:20px;
+    font-size:40px;
+    font-weight:300;
+    line-height:1.3;
+}
+
+.line{
+    width:80px;
+    height:3px;
+    background:white;
+    margin:35px 0;
+}
+
+.left p{
+    width:85%;
+    color:white;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.download{
+    margin-top:40px;
+    padding:12px 35px;
+    background:transparent;
+    color:white;
+    border:2px solid white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.download:hover{
+    background:white;
+    color:black;
+}
+
+.right{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.form-box{
+    width:360px;
+    background:white;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.form-title{
+    background:white;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.form-title span{
+    color:orange;
+}
+
+form{
+    padding:35px;
+}
+
+form input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid white;
+    margin-bottom:35px;
+    padding:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.start{
+    width:100%;
+    border:none;
+    background:orange;
+    color:white;
+    padding:18px;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.start:hover{
+    background:orange;
+}
+
+@media(max-width:992px){
+
+.hero .container{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 0;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left p{
+    width:100%;
+}
+
+.line{
+    margin:30px auto;
+}
+
+nav .container{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+}
+
+nav ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+}
